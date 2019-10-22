@@ -1,0 +1,17 @@
+[package]
+name = "basketball_nif"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[lib]
+name = "basketball_nif"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+lazy_static = "1.0"
+
+[dependencies.rustler]
+git = "https://github.com/rusterlium/rustler"
+branch = "master"
